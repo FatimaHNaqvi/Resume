@@ -1,0 +1,76 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #b28a52b8 , #f5f7fa);
+  background-size: cover;
+  color: #1c1308;
+  padding: 40px;
+}
+
+/* Translucent card container */
+.container {
+  background: rgba(231, 224, 219, 0.959);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(65, 60, 30, 0.15);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2rem;
+  color: #2c1108;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #2c1108;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+h3, h4 {
+  color: #2c1108;
+  margin-top: 20px;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  color: #2c1108;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+}
