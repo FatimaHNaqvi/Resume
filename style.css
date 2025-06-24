@@ -7,16 +7,16 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #b28a52b8 , #f5f7fa);
+  background: linear-gradient(135deg, #5c83c0b8 , #f5f7fa);
   background-size: cover;
-  color: #1c1308;
+  color: white;
   padding: 40px;
 }
 
 /* Translucent card container */
 .container {
-  background: rgba(231, 224, 219, 0.959);
-  backdrop-filter: blur(10px);
+  background: rgb(11, 24, 78);
+  backdrop-filter: blur(1000px);
   border-radius: 15px;
   padding: 30px;
   max-width: 900px;
@@ -27,7 +27,7 @@ body {
 /* Headings */
 h1 {
   font-size: 2.2rem;
-  color: #2c1108;
+  color: white;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -35,13 +35,13 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin-top: 30px;
-  color: #2c1108;
+  color: white;
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
 }
 
 h3, h4 {
-  color: #2c1108;
+  color: white;
   margin-top: 20px;
 }
 
@@ -58,7 +58,7 @@ li {
 
 /* Links */
 a {
-  color: #2c1108;
+  color: white;
   text-decoration: none;
   margin-right: 15px;
 }
@@ -73,4 +73,11 @@ footer {
   margin-top: 50px;
   font-size: 0.9rem;
   color: #666;
+}
+nav{
+ display: flex;
+  gap: 100px; /* space between links */
+  background: transparent; /* make background transparent */
+  padding: 10px 20px;
+  font-weight: bold;
 }
