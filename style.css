@@ -6,65 +6,80 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #5c83c0b8 , #f5f7fa);
-  background-size: cover;
+   position: relative;
+  z-index: 1;
   color: white;
-  padding: 40px;
+  padding: 2rem;
 }
 
-/* Translucent card container */
-.container {
-  background: rgb(11, 24, 78);
-  backdrop-filter: blur(1000px);
-  border-radius: 15px;
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-  box-shadow: 0 8px 20px rgba(65, 60, 30, 0.15);
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+ margin-top: 100px;
+  padding-top: 1px; 
 }
-
-/* Headings */
-h1 {
-  font-size: 2.2rem;
+.card{
+  background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px); /* Optional: makes background glassy */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   color: white;
-  margin-bottom: 20px;
   text-align: center;
-}
+  width: 52%;
 
-h2 {
-  font-size: 1.5rem;
-  margin-top: 30px;
-  color: white;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
 }
-
-h3, h4 {
-  color: white;
-  margin-top: 20px;
+ul{
+  list-style-type: none;
 }
-
-/* Lists */
-ul {
-  margin-left: 20px;
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1; /* Keep it behind all other content */
+  object-fit: cover;
+  transition-delay: 5s;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  margin-left: 32%;
+  width:30%;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.3); /* transparent white */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);  
+  z-index: 999;
   margin-top: 10px;
+ 
 }
 
-li {
-  line-height: 1.6;
-  margin-bottom: 8px;
+.nav-bar ul {
+  list-style: none;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-/* Links */
-a {
+.nav-bar li a {
   color: white;
   text-decoration: none;
-  margin-right: 15px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.5s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-bar li a:hover {
+  color: rgb(55, 50, 47);
+
 }
 
 /* Footer */
@@ -73,11 +88,4 @@ footer {
   margin-top: 50px;
   font-size: 0.9rem;
   color: #666;
-}
-nav{
- display: flex;
-  gap: 100px; /* space between links */
-  background: transparent; /* make background transparent */
-  padding: 10px 20px;
-  font-weight: bold;
 }
