@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatima Haider Naqvi Resume</title>
     <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <video autoplay muted loop id="bg-video">
@@ -14,17 +16,34 @@
 
   <nav class="nav-bar">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#home"><i class="fas fa-home"></i></a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Courses</a></li>
   </ul>
 </nav>
 <div class="container">
    
-    <div class="about card">
-    <h2>About</h2> 
-    <p>Hi, I'm Fatima</p>
+     <div class="home card" id="home">
+    <h1>Hi, I'm <span class="highlight">Fatima!</span></h1>
+  
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="red"></span>
+      <span class="yellow"></span>
+      <span class="green"></span>
+    </div>
+      <div class="terminal-body">
+      <pre id="typed-text"></pre>
+    </div>
+    </div>
+  </div>
+  
+    <div class="about card" id="about">
+      <h2>About</h2>
     <p>Passionate Full Stack Developer with hands-on experience in building secure, scalable web applications in the
     fintech and insurance sectors. Skilled in both frontend and backend development with a strong foundation in
     Java, PHP (Laravel), .NET, MySQL, and React.js. Proven ability to integrate APIs, develop admin dashboards,
@@ -32,8 +51,8 @@
     code.</p>
     </div>
 
-    <div class="Skills card">
-    <h2>SKILLS</h2>
+    <div class="Skills card" id="skills">
+    <h2>Skills</h2>
     <ul>
         <li>Frontend: HTML, CSS, JavaScript, React.js</li>
         <li>Backend: Java (Spring Boot), PHP (Laravel, Lumen), C# (.NET)</li>
@@ -45,8 +64,8 @@
     </ul>
     </div>
         
-    <div class="Experience card">
-    <h2>EXPERIENCE</h2>
+    <div class="Experience card" id="experience">
+    <h2>Experience</h2>
     <h3>Junior Tech Developer - (2023-Present)</h3>
     <ul>
         <li>Designed and implemented a system to process high volumes of financial transactions, routing them to
@@ -70,10 +89,10 @@
     </ul>
     </div>
 
-    <div class="Projects card">
-    <h2>PROJECT</h2>
+    <div class="Projects card" id="projects">
+    <h2>Project</h2>
 
-    <h4>E-Commerce Website (Personal Project)</h4>
+    <h3>E-Commerce Website (Personal Project)</h3>
     <ul>
     <li>Built a full-featured online store using HTML, CSS, and JavaScript.</li>
     <li>Implemented secure login, admin dashboard, product filters, and dynamic listings.</li>
@@ -81,26 +100,26 @@
     </ul>
     </div>
 
-    <div class="education card">
-    <h2>EDUCATION</h2>
-        <h4>B.E. in Telecommunication Engineering - CGPA: 3.8</h4>
+    <div class="education card" id="education">
+    <h2>Education</h2>
+        <h3>B.E. in Telecommunication Engineering - CGPA: 3.8</h3>
         <ul>
         <li>NED University of Engineering and Technology (2018 - 2022)</li>
         </ul>
 
-        <h4>HSC - Grade A+</h4>
+        <h3>HSC - Grade A+</h3>
         <ul>
         <li>BAMM PECHS Govt. College for Women, Karachi (2016 - 2018)</li>
         </ul>
 
-        <h4>SSC - Grade A+</h4>
+        <h3>SSC - Grade A+</h3>
         <ul>
         <li>Azeem Children's Paradise School, Karachi (2004 - 2016)</li>
         </ul>
     </div>
 
-    <div class="certificates card">
-    <h2>CERTIFCATES AND ONLINE COURSES</h2>
+    <div class="certificates card" id="certificates">
+    <h2>Certificates And Online Courses</h2>
     <ul>
         <li>The Complete Full-Stack Web Development Bootcamp - Udemy (In Progress)</li>
         <li>Java Masterclass 2025: 130+ Hours of Expert Lessons - Udemy (In Progress)</li>
@@ -111,5 +130,7 @@
     <p>© 2025 Fatima Haider Naqvi</p>
   </footer>
   </div>
+      <script src="script.js"></script>
+
 </body>
 </html>

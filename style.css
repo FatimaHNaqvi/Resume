@@ -1,12 +1,20 @@
-/* Reset and base styling */
+
+html {
+  scroll-padding-top: 150px; /* adjust based on navbar height */
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
+h2{
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
 body {
-   position: relative;
+  font-family:  "Afacad Flux", sans-serif;
+  position: relative;
   z-index: 1;
   color: white;
   padding: 2rem;
@@ -17,10 +25,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: space-between;
   width: 100%;
-  gap: 50px;
- margin-top: 100px;
-  padding-top: 1px; 
+  gap: 300px;
+  margin-top: 150px;
+  padding-top: 10px; 
 }
 .card{
   background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
@@ -30,12 +39,12 @@ body {
   backdrop-filter: blur(10px); /* Optional: makes background glassy */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   color: white;
-  text-align: center;
   width: 52%;
-
+    line-height: 2;
 }
-ul{
-  list-style-type: none;
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 #bg-video {
   position: fixed;
@@ -50,8 +59,8 @@ ul{
 .nav-bar {
   position: fixed;
   top: 0;
-  margin-left: 32%;
-  width:30%;
+  margin-left: 25%;
+  width:45%;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.3); /* transparent white */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -80,6 +89,80 @@ ul{
 .nav-bar li a:hover {
   color: rgb(55, 50, 47);
 
+}
+.home {
+  font-family: 'Courier New', monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+}
+
+.highlight {
+  color: #00ffcc;
+}
+
+.terminal {
+  background: #1e1e1e;
+  border-radius: 10px;
+  width: 100%;
+  max-width:700px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+}
+
+.terminal-header {
+  background: #2d2d2d;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.terminal-header span {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background: #ff605c; }
+.yellow { background: #ffbd44; }
+.green { background: #00ca4e; }
+
+/* Optional Typing Effect */
+.terminal-body {
+  padding: 1rem;
+  font-size: 1rem;
+  white-space: pre-wrap;
+    text-align: center;
+}
+
+#typed-text {
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  display: inline-block;  
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: rgba(255,255,255,0.75); }
+  50% { border-color: transparent; }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Footer */
