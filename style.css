@@ -206,7 +206,7 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 1200px) {
   body {
     padding: 1rem;
   }
