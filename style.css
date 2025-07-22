@@ -289,5 +289,7 @@ footer {
   white-space: pre-wrap;     /* wrap within width */
   word-break: break-word;
 }
-
+#projects{
+  padding-left: 50px;
+}
 }
