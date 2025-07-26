@@ -1,6 +1,6 @@
-const text = `I love bringing ideas to life through
- code — solving tough problems, designing smart systems, and
- creating tech that actually matters!`;
+const text = `I love bringing ideas to life through code — solving 
+              tough problems, designing smart systems, and creating
+                      tech that actually matters!`;
 
 const typedText = document.getElementById("typed-text");
 
@@ -15,6 +15,6 @@ function typeChar() {
 }
 
 window.onload = typeChar;
-  document.getElementById('menu-toggle').addEventListener('click', () => {
-    document.getElementById('nav-links').classList.toggle('show');
-  });
+document.getElementById("menu-toggle").addEventListener("click", () => {
+  document.getElementById("nav-links").classList.toggle("show");
+});
